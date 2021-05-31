@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>The Cactus Club</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <style>
             @font-face { font-family: Mexcellent; src: url('www/mexcellent.otf'); }
             @font-face {font-family: Calibre; src: url('www/TestCalibre-Regular.otf'); }
@@ -36,6 +36,18 @@
             p.glass {
                 font-family: Calibre-italic;
                 color: #7d7d7d;
+            }
+
+            a:link {
+                color: #7d7d7d;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: #7d7d7d;
+                background-color: transparent;
+                text-decoration: none;
             }
 
         </style>
@@ -82,60 +94,107 @@
                     <hr class="head">
                 </div>
                 <div class="col"></div>
+            </div>
+            <div class="text-center" id="drink_list">
+                <br>
+            </div>
         </div>
-        <div class="text-center">
-            <br>
-            <h4>Airmail</h4>
-            <p class="mb-0">Aged Rum, Lemon Juice, Simple Syrup, Champagne</p>
-            <p class="my-0 glass">Stem Glass</p>
-            <br>
-            <h4>French 75</h4>
-            <p class="mb-0">Gin, Lemon Juice, Simple Syrup, Champagne</p>
-            <p class="my-0 glass">Stem Glass</p>
-            <br>
-            <h4>The Last Word</h4>
-            <p class="mb-0">Gin, Maraschino Liqueur, Green Chartreuse, Lime Juice</p>
-            <p class="my-0 glass">Stem Glass</p>
-            <br>
-            <h4>Might As Well Be Spring</h4>
-            <p class="mb-0">Hendricks Gin, Muddled Blueberry and Cucumber, Lime, Mint Syrup, Grapefruit Bitters</p>
-            <p class="my-0 glass">Stem Glass</p>
-            <br>
-            <h4>Kollar</h4>
-            <p class="mb-0">Gin, Green Chartreuse, Lemon Juice, Egg White, Simple Syrup, Angostora Bitters</p>
-            <p class="my-0 glass">Stem Glass</p>
-            <br>
-            <h4>Sazerac</h4>
-            <p class="mb-0">Rye Whiskey, Simple Syrup, Bitters, Absinthe, Orange Peel</p>
-            <p class="my-0 glass">Lowball</p>
-            <br>
-            <h4>Whiskey Sour</h4>
-            <p class="mb-0">Whiskey, Lemon Juice, Powdered Sugar</p>
-            <p class="my-0 glass">Lowball</p>
-            <br>
-            <h4>Daiquiri</h4>
-            <p class="mb-0">Aged Rum, Lime Juice, Simple Syrup</p>
-            <p class="my-0 glass">Stem Glass</p>
-            <br>
-            <h4>Coconut Daiquiri</h4>
-            <p class="mb-0">Aged Rum, Lime Juice, Coconut Simple Syrup</p>
-            <p class="my-0 glass">Stem Glass</p>
-            <br>
-            <h4>Floridita Daiquiri</h4>
-            <p class="mb-0">White Rum, Lime Juice, Maraschino Liqueur, Granulated Sugar</p>
-            <p class="my-0 glass">Stem Glass, Frozen</p>
-            <br>
-            <h4>Benito Juarez</h4>
-            <p class="mb-0">Mezcal, Lime, Simple Syrup, Bitters</p>
-            <p class="my-0 glass">Lowball</p>
-            <br>
-            <h4>Ranch Water</h4>
-            <p class="mb-0">Reposado Tequila, Lime, Topo Chico</p>
-            <p class="my-0 glass">Highball</p>
-            <br><br>
-            <h3>Beer</h3>
-            <p class="mb-0">Lone Star</p>
-            <p class="my-0 glass">Beer Can You Crush on your Head</p>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header text-center">
+                <h4 class="modal-title w-100" id="exampleModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <p class="text-center" id="drink-description"></p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <!-- Drinks Array and Production Loop -->
+        <script>
+        let drinks = [
+            {
+                "name": "Airmail",
+                "ingredients": "Aged Rum, Lemon Juice, Simple Syrup, Champagne",
+                "glass": "Stem Glass",
+                "description": "This is an Airmail"
+            },
+            {
+                "name": "French 75",
+                "ingredients": "Gin, Lemon Juice, Simple Syrup, Champagne",
+                "glass": "Stem Glass",
+                "description": "Frenchy"
+            },
+            {
+                "name": "The Last Word",
+                "ingredients": "Gin, Maraschino Liqueur, Green Chartreuse, Lime Juice",
+                "glass": "Stem Glass",
+                "description": "Last Wordy"
+            },
+            {
+                "name": "Might As Well Be Spring",
+                "ingredients": "Hendricks Gin, Muddled Blueberry and Cucumber, Lime, Mint Syrup, Grapefruit Bitters",
+                "glass": "Stem Glass",
+                "description": "Springtime is here"
+            },
+            {
+                "name": "Kollar",
+                "ingredients": "Gin, Green Chartreuse, Lemon Juice, Egg White, Simple Syrup, Angostora Bitters",
+                "glass": "Stem Glass",
+                "description": "Reeeaaaallllly good"
+            },
+            {
+                "name": "Sazerac",
+                "ingredients": "Rye Whiskey, Simple Syrup, Bitters, Absinthe, Orange Peel",
+                "glass": "Lowball",
+                "description": "New Orleans Drink"
+            },
+            {
+                "name": "Whiskey Sour",
+                "ingredients": "Whiskey, Lemon Juice, Powdered Sugar",
+                "glass": "Lowball",
+                "description": "sourpants"
+            },
+            {
+                "name": "Daiquiri",
+                "ingredients": "Aged Rum, Lime Juice, Simple Syrup",
+                "glass": "Stem Glass",
+                "description": "Cuba here we come"
+            },
+            {
+                "name": "Coconut Daiquiri",
+                "ingredients": "Aged Rum, Lime Juice, Coconut Simple Syrup",
+                "glass": "Stem Glass",
+                "description": "Coconut Cuba here we come"
+            },
+            {
+                "name": "Floridita Daiquiri",
+                "ingredients": "White Rum, Lime Juice, Maraschino Liqueur, Granulated Sugar",
+                "glass": "Stem Glass, Frozen",
+                "description": "Florida Cuba here we come"
+            },
+            {
+                "name": "Benito Juarez",
+                "ingredients": "Mezcal, Lime, Simple Syrup, Bitters",
+                "glass": "Lowball",
+                "Description": "Down in the West Texas town of El Paso"
+            }
+        ];
+
+        drinks.forEach(drink => drink_list.innerHTML +=
+            '<h4>' + `${drink.name}` + '</h4>' +
+            '<p class="mb-0">' + `${drink.ingredients}` + '</p>' +
+            '<p class="my-0 glass">' + `${drink.glass}` + '</p>' +
+            '<br>'
+        );
+
+        </script>
     </body>
 </html>
