@@ -145,6 +145,7 @@
         <script>
         let drinks = [
             {
+                "id": "drink-0",
                 "name": "Airmail",
                 "ingredients": "Aged Rum, Lemon Juice, Simple Syrup, Champagne",
                 "glass": "Stem Glass",
@@ -155,6 +156,7 @@
                 "season": "classic"
             },
             {
+                "id": "drink-1",
                 "name": "Antique Fizz",
                 "ingredients": "Treaty Oak Antique Gin, Lemon Juice, Lime Juice, Lavender Simple Syrup",
                 "glass": "Stem Glass",
@@ -164,6 +166,7 @@
                 "season": "classic"
             },
             {
+                "id": "drink-2",
                 "name": "French 75",
                 "ingredients": "Gin, Lemon Juice, Simple Syrup, Champagne",
                 "glass": "Stem Glass",
@@ -175,6 +178,7 @@
                 "season": "classic"
             },
             {
+                "id": "drink-3",
                 "name": "The Last Word",
                 "ingredients": "Gin, Maraschino Liqueur, Green Chartreuse, Lime Juice",
                 "glass": "Stem Glass",
@@ -186,13 +190,15 @@
                 "season": "classic"
             },
             {
+                "id": "drink-4",
                 "name": "Might As Well Be Spring",
                 "ingredients": "Hendricks Gin, Muddled Blueberry and Cucumber, Lime, Mint Syrup, Grapefruit Bitters",
                 "glass": "Stem Glass",
-                "description": "This is a drink that Amanda found on Instagram and thought 'that sounds good'... <br><br><br>... and it is.",
+                "description": "This is a drink that Amanda found on Instagram and thought 'that sounds good' ... <br><br>and it is.",
                 "season": "summer"
             },
             {
+                "id": "drink-5",
                 "name": "Kollar",
                 "ingredients": "Gin, Green Chartreuse, Lemon Juice, Egg White, Simple Syrup, Angostora Bitters",
                 "glass": "Stem Glass",
@@ -200,6 +206,7 @@
                 "season": "classic"
             },
             {
+                "id": "drink-6",
                 "name": "Sazerac",
                 "ingredients": "Rye Whiskey, Simple Syrup, Bitters, Absinthe, Lemon Peel",
                 "glass": "Lowball",
@@ -213,6 +220,7 @@
                  "season": "classic"
             },
             {
+                "id": "drink-7",
                 "name": "Whiskey Sour",
                 "ingredients": "Whiskey, Lemon Juice, Powdered Sugar",
                 "glass": "Lowball",
@@ -227,6 +235,7 @@
                 "season": "classic"
             },
             {
+                "id": "drink-8",
                 "name": "Daiquiri",
                 "ingredients": "Aged Rum, Lime Juice, Simple Syrup",
                 "glass": "Stem Glass",
@@ -240,6 +249,7 @@
                 "season": "summer"
             },
             {
+                "id": "drink-9",
                 "name": "Coconut Daiquiri",
                 "ingredients": "Aged Rum, Lime Juice, Coconut Simple Syrup",
                 "glass": "Stem Glass",
@@ -247,6 +257,7 @@
                 "season": "summer"
             },
             {
+                "id": "drink-10",
                 "name": "Floridita Daiquiri",
                 "ingredients": "White Rum, Lime Juice, Maraschino Liqueur, Granulated Sugar",
                 "glass": "Stem Glass, Frozen",
@@ -256,15 +267,17 @@
                 "season": "summer"
             },
             {
+                "id": "drink-11",
                 "name": "Benito Juarez",
                 "ingredients": "Mezcal, Lime, Simple Syrup, Bitters",
                 "glass": "Lowball",
-                "description": "The recipe was passed to us by a generous bartender from Gallo Pelon, a mezcaleria in Raleigh, NC. <br><br>\
+                "description": "The recipe was passed to us by a generous bartender from Gallo Pelón, a mezcaleria in Raleigh, NC. <br><br>\
                 Benito Pablo Juárez García was a Mexican lawyer and politician, who served as the 26th president of Mexico from 1858 until his death in 1872. \
                 Juárez is revered in Mexico as 'a preeminent symbol of Mexican nationalism and resistance to foreign intervention.'<br><br>We drink to him.",
                 "season": "classic"
             },
             {
+                "id": "drink-12",
                 "name": "Stinger",
                 "ingredients": "Brandy, Creme de Menthe",
                 "glass": "Lowball",
@@ -283,7 +296,7 @@
 
         //classics, always on the menu
         classic_drinks.forEach( (drink, i) => drink_list.innerHTML +=
-            '<h4>' + '<a href=# data-toggle="modal" data-target="#exampleModal" data-id='+ i +'>' + `${drink.name}` + '</a>' + '</h4>' +
+            '<h4>' + '<a href=# data-toggle="modal" data-target="#exampleModal" data-id='+ `${drink.id}` + '>' + `${drink.name}` + '</a>' + '</h4>' +
             '<p class="mb-0">' + `${drink.ingredients}` + '</p>' +
             '<p class="my-0 glass">' + `${drink.glass}` + '</p>' +
             '<br>'
@@ -291,7 +304,7 @@
 
         //change to winter_drinks for winter_time
         summer_drinks.forEach( (drink, i) => seasonal_drink_list.innerHTML +=
-            '<h4>' + '<a href=# data-toggle="modal" data-target="#exampleModal" data-id='+ i +'>' + `${drink.name}` + '</a>' + '</h4>' +
+            '<h4>' + '<a href=# data-toggle="modal" data-target="#exampleModal" data-id='+ `${drink.id}` +'>' + `${drink.name}` + '</a>' + '</h4>' +
             '<p class="mb-0">' + `${drink.ingredients}` + '</p>' +
             '<p class="my-0 glass">' + `${drink.glass}` + '</p>' +
             '<br>'
@@ -300,9 +313,10 @@
         $('#exampleModal').on('show.bs.modal', function (event) {
             var button = $(event.relatedTarget) // Button that triggered the modal
             var array_id = button.data('id') // Extract info from data-* attributes
+            var drink = drinks.filter(d => d.id === array_id)[0]
             var modal = $(this)
-            modal.find('.modal-title').text(drinks[array_id].name)
-            modal.find('.modal-body').html(drinks[array_id].description)
+            modal.find('.modal-title').text(drink.name)
+            modal.find('.modal-body').html(drink.description)
         })
 
         </script>
