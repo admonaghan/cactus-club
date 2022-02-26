@@ -6,7 +6,7 @@
         <title>The Cactus Club</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <style>
-            @font-face { font-family: Mexcellent; src: url('www/mexcellent.otf'); }
+            @font-face {font-family: Mexcellent; src: url('www/mexcellent.otf'); }
             @font-face {font-family: Calibre; src: url('www/TestCalibre-Regular.otf'); }
             @font-face {font-family: Calibre-light; src: url('www/TestCalibre-Light.otf'); }
             @font-face {font-family: Calibre-italic; src: url('www/TestCalibre-LightItalic.otf'); }
@@ -99,16 +99,13 @@
             </div>
             <h1 class="display-4">Cactus Club</h1>
         </div>
+        <!--
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-2 text-center">
-                <a href="index.html">Austin, TX</a>
+            <div class="col-12 text-center">
+                <p>Austin, TX</p>
             </div>
-            <div class="col-2 text-center">
-                <a href="hollywood.html">Hollywood Hills, CA</a>
-            </div>
-            <div class="col-4 text-center"></div>
         </div>
+        -->
         <div class="row">
             <div class="col"></div>
             <div class="col-8">
@@ -120,7 +117,7 @@
             <br>
         </div>
         <br>
-        <h2 class="text-center">Summer Seasonal</h2>
+        <h2 class="text-center">Winter Seasonal</h2>
         <div class="text-center" id="seasonal_drink_list">
             <br>
         </div>
@@ -309,8 +306,36 @@
                 We think it's time to bring it back.",
                 "season": "classic",
                 "location": ["TX"]
+            },
+            {
+                "id": "drink-13",
+                "name": "Cabin Fever Cure",
+                "ingredients": "Rum, Plantation Overproof Rum, Benedictine, Demerara Syrup, Heavy Cream, Egg",
+                "glass": "Lowball",
+                "description": "Two types of rum meet the sweet spice of Benedictine in this creamy flip recipe. The only iced drink that will warm you up.",
+                "season": "winter",
+                "location": ["TX"]
+            },
+            {
+                "id": "drink-14",
+                "name": "Antique Toddy",
+                "ingredients": "Treaty Oak Antique Gin, Lemon, Honey, Spices",
+                "glass": "Mug",
+                "description": "A Texas twist on a classic Hot Toddy, using Hill Country Aged Gin heated with local spices to keep you warm.",
+                "season": "winter",
+                "location": ["TX"]
+            },
+            {
+                "id": "drink-15",
+                "name": "Texas Winter Tiki",
+                "ingredients": "Bourbon, Ginger Syrup, Banana Liqueur, Lemon Juice, Bitters",
+                "glass": "Stem Glass",
+                "description": "Loosely inspired by Bananas Foster, a classic New Orleans dessert, this cocktail warms with bourbon while bringing in tropical flavors to remind you of the summer left behind.",
+                "season": "winter",
+                "location": ["TX"]
             }
         ];
+
 
         let classic_drinks = drinks.filter(drink => drink.season === "classic");
         let summer_drinks = drinks.filter(drink => drink.season === "summer");
@@ -325,7 +350,7 @@
         );
 
         //change to winter_drinks for winter_time
-        summer_drinks.forEach( (drink, i) => seasonal_drink_list.innerHTML +=
+        winter_drinks.forEach( (drink, i) => seasonal_drink_list.innerHTML +=
             '<h4>' + '<a href=# data-toggle="modal" data-target="#exampleModal" data-id='+ `${drink.id}` +'>' + `${drink.name}` + '</a>' + '</h4>' +
             '<p class="mb-0">' + `${drink.ingredients}` + '</p>' +
             '<p class="my-0 glass">' + `${drink.glass}` + '</p>' +
