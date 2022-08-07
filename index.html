@@ -117,7 +117,7 @@
             <br>
         </div>
         <br>
-        <h2 class="text-center">Winter Seasonal</h2>
+        <h2 class="text-center">Summer</h2>
         <div class="text-center" id="seasonal_drink_list">
             <br>
         </div>
@@ -251,7 +251,7 @@
             {
                 "id": "drink-8",
                 "name": "Daiquiri",
-                "ingredients": "Aged Rum, Lime Juice, Simple Syrup",
+                "ingredients": "Aged Rum, Lime Juice, Pineapple Demerara Syrup",
                 "glass": "Stem Glass",
                 "description": "While most vintage drinks lack documentation proving their precise point of creation, \
                 the daiquiri's origin is backed up by an actual cocktail recipe card signed by a 'Jennings Cox' in 1896. \
@@ -260,7 +260,7 @@
                 It turned out to be a huge hit, and Cox christened it the 'Daiquiri', naming the drink after a nearby port town.<br><br>\
                 In 1909, Cox's cocktail, which until then could only be found in Cuba, was brought to America by Admiral Lucius W. Johnson, who introduced it to Washington, D.C.'s Army and Navy Club.<br><br>\
                 The frozen daquiri was born in the 1920’s by the bartender/owner of the Floridita in Havana, Cuba by adding shaved ice.",
-                "season": "summer",
+                "season": "tiki",
                 "location": ["TX", "CA"]
             },
             {
@@ -333,6 +333,15 @@
                 "description": "Loosely inspired by Bananas Foster, a classic New Orleans dessert, this cocktail warms with bourbon while bringing in tropical flavors to remind you of the summer left behind.",
                 "season": "winter",
                 "location": ["TX"]
+            },
+            {
+                "id": "drink-16",
+                "name": "Painkiller",
+                "ingredients": "A&#241ejo Rum, Coconut, Pineapple, Orange, Lime, Blackstrap Rum Float",
+                "glass": "Tiki Glass",
+                "description": "A tiki drink through and through, the original Painkiller was created in the 1970s at the Soggy Dollar Bar on the island of Jost Van Dyke, British Virgin Islands.<br><br>Drink one to kill the pain.<br>Drink two and the pain returns in the morning.",
+                "season": "summer",
+                "location": ["TX"]
             }
         ];
 
@@ -340,6 +349,8 @@
         let classic_drinks = drinks.filter(drink => drink.season === "classic");
         let summer_drinks = drinks.filter(drink => drink.season === "summer");
         let winter_drinks = drinks.filter(drink => drink.season === "winter");
+        let tiki_drinks = drinks.filter(drink => drink.season === "tiki");
+
 
         //classics, always on the menu
         classic_drinks.forEach( (drink, i) => drink_list.innerHTML +=
@@ -350,7 +361,8 @@
         );
 
         //change to winter_drinks for winter_time
-        winter_drinks.forEach( (drink, i) => seasonal_drink_list.innerHTML +=
+        //change to tiki_drinks for tiki_special
+        summer_drinks.forEach( (drink, i) => seasonal_drink_list.innerHTML +=
             '<h4>' + '<a href=# data-toggle="modal" data-target="#exampleModal" data-id='+ `${drink.id}` +'>' + `${drink.name}` + '</a>' + '</h4>' +
             '<p class="mb-0">' + `${drink.ingredients}` + '</p>' +
             '<p class="my-0 glass">' + `${drink.glass}` + '</p>' +
