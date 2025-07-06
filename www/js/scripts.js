@@ -13,7 +13,7 @@ fetch('../../data/drinks.json')
         classic_drinks.forEach( (drink, i) => {
             const drinkElement = document.createElement('div');
             drinkElement.innerHTML = `
-                <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-id="${drink.id}">${drink.name}</a></h4>
+                <h4><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="${drink.id}">${drink.name}</a></h4>
                 <p class="mb-0">${drink.ingredients}</p>
                 <p class="my-0 glass">${drink.glass}</p>
                 <br>
@@ -36,7 +36,7 @@ fetch('../../data/drinks.json')
         seasonal_drinks.forEach( (drink, i) => {
             const drinkElement = document.createElement('div');
             drinkElement.innerHTML = `
-                <h4><a href="#" data-toggle="modal" data-target="#exampleModal" data-id="${drink.id}">${drink.name}</a></h4>
+                <h4><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-id="${drink.id}">${drink.name}</a></h4>
                 <p class="mb-0">${drink.ingredients}</p>
                 <p class="my-0 glass">${drink.glass}</p>
                 <br>
