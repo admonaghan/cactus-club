@@ -1,0 +1,164 @@
+[
+    {
+        "id": "drink-0",
+        "name": "Airmail",
+        "ingredients": "Aged Rum, Lemon Juice, Simple Syrup, Champagne",
+        "glass": "Stem Glass",
+        "description": "A potent little drink whose name references the fastest way of getting from point A (sober) to point B (not sober), this drink may date back to the early days of airmail, which began May 15, 1918 with the world's first scheduled airmail route between New York and Washington DC. The earliest known reference of the drink, however, is a 1930s promotional pamphlet, <i>Bacardi and It’s Many Uses</i>. <br> <br> The drink was most popular in the 1940s, notably appearing in W.C Whitfield's 1941 wooden cover bound book <i>Here’s How</i>, accompanied by the note 'It ought to make you fly high'.",
+        "season": "classic",
+        "location": ["TX", "CA"]
+    },
+    {
+        "id": "drink-1",
+        "name": "Antique Fizz",
+        "ingredients": "Treaty Oak Antique Gin, Lemon Juice, Lime Juice, Lavender Simple Syrup",
+        "glass": "Stem Glass",
+        "description": "A delicious concoction (and cousin to the Gin Fizz) from the Treaty Oak Distillery in Dripping Springs, TX, this cocktail uses their Waterloo Antique Gin in place of regular gin.<br><br>Waterloo Antique Gin spends two years in first-use, medium-char American oak barrels to develop rich wood flavors that compliment the botanical backbone of their gin. (i.e. it’s gin that thinks it bourbon).",
+        "season": "classic",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-2",
+        "name": "French 75",
+        "ingredients": "Gin, Lemon Juice, Simple Syrup, Champagne",
+        "glass": "Stem Glass",
+        "description": "Once dubbed 'the most powerful drink in the world', the French 75 got its name from the fast-firing, accurate French field gun that had become an icon of victory in the American coverage of World War I. <br><br> The French 75 as we know it first appeared in print in 1927, at the height of Prohibition, in a bootlegger-friendly volume called <i>Here’s How!</i> put out by a New York humor magazine. By the 1930s, the drink was everywhere. The elixir has the distinction of being the only classic born in America during the dry period of Prohibition.",
+        "season": "classic",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-3",
+        "name": "The Last Word",
+        "ingredients": "Gin, Maraschino Liqueur, Green Chartreuse, Lime Juice",
+        "glass": "Stem Glass",
+        "description": "The Last Word is a Prohibition-era cocktail that got its beginnings in the Detroit Athletic Club’s bar in the early 1920s. The cocktail survived for a few decades in America’s bars and pubs, but the following it had attained was not enough to see it through to the latter half of the century, and it soon faded into obscurity. This drink has seen a recent revival in American cocktail bars. <br><br>Green Charteuse is an ingredient worthy of note – it’s a French liqueur made by Carthusian Monks and is (allegedly) flavoured with 130 different herbs, giving it a strong medicinal edge. Its careful craft would have been in great contrast to the bathtub gin of the Prohibition era.",
+        "season": "classic",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-4",
+        "name": "Might As Well Be Spring",
+        "ingredients": "Hendricks Gin, Muddled Blueberry and Cucumber, Lime, Mint Syrup, Grapefruit Bitters",
+        "glass": "Stem Glass",
+        "description": "This is a drink that Amanda found on Instagram and thought 'that sounds good' ... <br><br>and it is.",
+        "season": "summer",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-5",
+        "name": "Kollar",
+        "ingredients": "Gin, Green Chartreuse, Lemon Juice, Egg White, Simple Syrup, Angostora Bitters",
+        "glass": "Stem Glass",
+        "description": "Earthy, tart, and smooth. While not a classic cocktail, it’s a classic in our book.",
+        "season": "classic",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-6",
+        "name": "Sazerac",
+        "ingredients": "Rye Whiskey, Simple Syrup, Bitters, Absinthe, Lemon Peel",
+        "glass": "Lowball",
+        "description": "New Orleans has plenty of inventions to brag about -- the King Cake, Cafe du Monde, Carl Weathers -- but the Sazerac remains, perhaps, its most impressive contribution.  Legend has long held that the historic NOLA drink might even be America's first cocktail. <br> <br> Antoine Amédée Peychaud is the man most associated with those beginnings.  He ran a drug store in New Orleans in the 1830s and created Peychaud's Bitters -- an ingredient still served in Sazeracs to this day.  Peychaud was born in Haiti, but fled to Louisiana as violence erupted between the slaves and French colonists, and he eventually set up his own dispensary in New Orleans.  On top of filling prescriptions, he apparently served his customers toddies mixed with his bitters and Sazerac de Forge et Fils cognac.  They became so popular that a bar called the Sazerac Coffee House started buying his bitters and pouring a blend of the Sazerac cognac, bitters, sugar, and absinthe as their signature cocktail.  Eventually they purchased the rights to the bitters outright, subbed the cognac for rye whiskey, and the Sazerac was born.",
+        "season": "classic",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-7",
+        "name": "Whiskey Sour",
+        "ingredients": "Whiskey, Lemon Juice, Powdered Sugar",
+        "glass": "Lowball",
+        "description": "The recipe itself was first written down in the 1862 book <i>The Bartender's Guide</i> by Jerry Thomas. However, the basic recipe was known for over a century prior. In that time, professional sailors suffered from scurvy, malnutrition, and sea-sicknesses, until a bartender’s hero named Vice Admiral Edward Vernon of England began mixing a few ingredients together to serve to his crew. Sailors had a ration of various things, like limes and lemons to prevent scurvy, and liquor for something safe to drink. To prevent a ship full of intoxicated shipmates, the liquor, usually rum, was watered down, and lemon or lime juice was added to mask the flavor. Hence, we have a very early version of the Sour.<br><br>The sailors then brought this concept to shore and eventually the basics of the sour cocktail were refined to what we know it as today. Gin and Brandy were also substituted in by the English, but the Americans were more fond of the native whiskey. Jerry Thomas ultimately refined and published this imbibement, codifying the sour into black and white.Egg was later added as a creamy, frothy element to the cocktail that went down smoother…although some bartenders insist that this makes the drink a Boston Sour.",
+        "season": "classic",
+        "location": ["TX", "CA"]
+    },
+    {
+        "id": "drink-8",
+        "name": "Daiquiri",
+        "ingredients": "Aged Rum, Lime Juice, Pineapple Demerara Syrup",
+        "glass": "Stem Glass",
+        "description": "While most vintage drinks lack documentation proving their precise point of creation, the daiquiri's origin is backed up by an actual cocktail recipe card signed by a 'Jennings Cox' in 1896. Cox, an American engineer who lived and worked in Cuba after the Spanish-American War, is believed to have invented the daiquiri after running out of gin while throwing a cocktail party, substituting rum since rum was plentiful in the country. It turned out to be a huge hit, and Cox christened it the 'Daiquiri', naming the drink after a nearby port town.<br><br>In 1909, Cox's cocktail, which until then could only be found in Cuba, was brought to America by Admiral Lucius W. Johnson, who introduced it to Washington, D.C.'s Army and Navy Club.<br><br>The frozen daquiri was born in the 1920’s by the bartender/owner of the Floridita in Havana, Cuba by adding shaved ice.",
+        "season": "summer",
+        "location": ["TX", "CA"]
+    },
+    {
+        "id": "drink-9",
+        "name": "Coconut Daiquiri",
+        "ingredients": "Aged Rum, Lime Juice, Coconut Simple Syrup",
+        "glass": "Stem Glass",
+        "description": "Take a classic, add coconut – brilliant",
+        "season": "summer",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-10",
+        "name": "Floridita Daiquiri",
+        "ingredients": "White Rum, Lime Juice, Maraschino Liqueur, Granulated Sugar",
+        "glass": "Stem Glass, Frozen",
+        "description": "In the 1930s, Cuban cocktails started to become popular in the United States thanks to the writers F. Scott Fitzgerald and Ernest Hemingway. In 1935, the bar <i>La Florida</i>, in Havana, Cuba took the original recipe and made additional variations. This is listed as “La Florida Daiquiri Number 4” in the souvenir recipe booklet.",
+        "season": "summer",
+        "location": ["TX", "CA"]
+    },
+    {
+        "id": "drink-11",
+        "name": "Benito Juarez",
+        "ingredients": "Mezcal, Lime, Simple Syrup, Bitters",
+        "glass": "Lowball",
+        "description": "The recipe was passed to us by a generous bartender from Gallo Pelón, a mezcaleria in Raleigh, NC. <br><br>Benito Pablo Juárez García was a Mexican lawyer and politician, who served as the 26th president of Mexico from 1858 until his death in 1872. Juárez is revered in Mexico as 'a preeminent symbol of Mexican nationalism and resistance to foreign intervention.'<br><br>We drink to him.",
+        "season": "classic",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-12",
+        "name": "Stinger",
+        "ingredients": "Brandy, Creme de Menthe",
+        "glass": "Lowball",
+        "description": "The Stinger is a pre-Prohibition drink composed simply of cognac and white crème de menthe. The odd couple is quite a pair, producing a cocktail that’s sweet, strong, minty and refreshing — the ideal interplay for an after-dinner nightcap.<br><br>For decades the drink was associated with the upper class. It appeared in the 1956 movie “High Society” starring Frank Sinatra and Bing Crosby, and James Bond drinks one in the 1956 novel “Diamonds Are Forever.” The Stinger remained popular in the United States until about the 1970s, when it fell out of favor. <br><br>We think it's time to bring it back.",
+        "season": "classic",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-13",
+        "name": "Cabin Fever Cure",
+        "ingredients": "Rum, Plantation Overproof Rum, Benedictine, Demerara Syrup, Heavy Cream, Egg",
+        "glass": "Lowball",
+        "description": "Two types of rum meet the sweet spice of Benedictine in this creamy flip recipe. The only iced drink that will warm you up.",
+        "season": "winter",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-14",
+        "name": "Antique Toddy",
+        "ingredients": "Treaty Oak Antique Gin, Lemon, Honey, Spices",
+        "glass": "Mug",
+        "description": "A Texas twist on a classic Hot Toddy, using Hill Country Aged Gin heated with local spices to keep you warm.",
+        "season": "winter",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-15",
+        "name": "Texas Winter Tiki",
+        "ingredients": "Bourbon, Ginger Syrup, Banana Liqueur, Lemon Juice, Bitters",
+        "glass": "Stem Glass",
+        "description": "Loosely inspired by Bananas Foster, a classic New Orleans dessert, this cocktail warms with bourbon while bringing in tropical flavors to remind you of the summer left behind.",
+        "season": "winter",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-16",
+        "name": "Painkiller",
+        "ingredients": "A&#241ejo Rum, Coconut, Pineapple, Orange, Lime, Blackstrap Rum Float",
+        "glass": "Tiki Glass",
+        "description": "A tiki drink through and through, the original Painkiller was created in the 1970s at the Soggy Dollar Bar on the island of Jost Van Dyke, British Virgin Islands.<br><br>Drink one to kill the pain.<br>Drink two and the pain returns in the morning.",
+        "season": "summer",
+        "location": ["TX"]
+    },
+    {
+        "id": "drink-17",
+        "name": "Margarita",
+        "ingredients": "Tequila, Grand Manier, Lime Juice, Agave Syrup",
+        "glass": "Lowball",
+        "description": "Shrouded in as much folklore and mystery as Mexico itself, the Margarita embodies the brightness, warmth, and resilience of Central America. A strong tequila bases is married to fresh lime juice, citrus flavors, and a mild sweetness to balance a dash of salt. The hotter it gets outside, the better it tastes.",
+        "season": "classic",
+        "location": ["TX"]
+    }
+]

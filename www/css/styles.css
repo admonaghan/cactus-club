@@ -1,0 +1,54 @@
+@font-face {font-family: Mexcellent; src: url('../mexcellent.otf'); }
+@font-face {font-family: Calibre; src: url('../TestCalibre-Regular.otf'); }
+@font-face {font-family: Calibre-light; src: url('../TestCalibre-Light.otf'); }
+@font-face {font-family: Calibre-italic; src: url('../TestCalibre-LightItalic.otf'); }
+
+h1 {
+    font-family: Mexcellent;
+    color: black;
+}
+
+hr.head {
+    height: 5px;
+    background-color: #fba08f;
+    opacity: 1;
+}
+
+hr.sec {
+    height: 1px;
+    background-color: #fba08f;
+    opacity: 1;
+    margin: mx-auto;
+}
+
+h2 {
+    font-family: Calibre;
+    color: #fba08f
+}
+
+h3, h4, body {
+    font-family: Calibre-light;
+    color: #7d7d7d;
+    margin: 2px;
+}
+
+p.glass {
+    font-family: Calibre-italic;
+    color: #7d7d7d;
+}
+
+a:link {
+    color: #7d7d7d;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #7d7d7d;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.modal-header {
+    border-bottom: 0 none;
+}
