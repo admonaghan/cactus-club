@@ -9,15 +9,6 @@
         "location": ["TX", "CA"]
     },
     {
-        "id": "drink-1",
-        "name": "Antique Fizz",
-        "ingredients": "Treaty Oak Antique Gin, Lemon Juice, Lime Juice, Lavender Simple Syrup",
-        "glass": "Stem Glass",
-        "description": "A delicious concoction (and cousin to the Gin Fizz) from the Treaty Oak Distillery in Dripping Springs, TX, this cocktail uses their Waterloo Antique Gin in place of regular gin.<br><br>Waterloo Antique Gin spends two years in first-use, medium-char American oak barrels to develop rich wood flavors that compliment the botanical backbone of their gin. (i.e. it’s gin that thinks it bourbon).",
-        "season": "classic",
-        "location": ["TX"]
-    },
-    {
         "id": "drink-2",
         "name": "French 75",
         "ingredients": "Gin, Lemon Juice, Simple Syrup, Champagne",
@@ -122,15 +113,6 @@
         "ingredients": "Rum, Plantation Overproof Rum, Benedictine, Demerara Syrup, Heavy Cream, Egg",
         "glass": "Lowball",
         "description": "Two types of rum meet the sweet spice of Benedictine in this creamy flip recipe. The only iced drink that will warm you up.",
-        "season": "winter",
-        "location": ["TX"]
-    },
-    {
-        "id": "drink-14",
-        "name": "Antique Toddy",
-        "ingredients": "Treaty Oak Antique Gin, Lemon, Honey, Spices",
-        "glass": "Mug",
-        "description": "A Texas twist on a classic Hot Toddy, using Hill Country Aged Gin heated with local spices to keep you warm.",
         "season": "winter",
         "location": ["TX"]
     },
